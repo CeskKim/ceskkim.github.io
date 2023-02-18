@@ -7,7 +7,7 @@ version: 2
 
 # Personal info
 name: 김현욱
-title: Data Engineer
+title: 데이터 엔지니어
 email: baiosix@gmail.com
 # website: www.github.com/sproogen/resume-theme
 
@@ -15,17 +15,17 @@ email: baiosix@gmail.com
 darkmode: false
 
 # Social links
-twitter_username: facespics
-github_username:  sproogen
+# twitter_username: facespics
+# github_username:  sproogen
 # stackoverflow_username: "00000001"
 # dribbble_username: jekyll
 # facebook_username: jekyll
 # flickr_username: jekyll
-instagram_username: jameswgrant
-linkedin_username: jameswgrant
+# instagram_username: jameswgrant
+# linkedin_username: jameswgrant
 # xing_username: jekyll
 # pinterest_username: jekyll
-youtube_username: globalmtb
+# youtube_username: globalmtb
 # googleplus_username: +jekyll
 # orcid_username: 0000-0000-0000-0000
 
@@ -48,9 +48,12 @@ additional_links:
 # about_title: About Me
 about_profile_image: images/profile.jpg
 about_content: | # this will include new lines to allow paragraphs
-  Hi, my name's Brett and I'm a senior network system administrator. As well as administrating systems I also have experience making software and web apps. I have worked at a number of companies gaining teamwork and leadership skills.
+7군데 ERP 구축 및 서비스 운영, 동접 2만, 150만명의 한국, 글로벌 MMORPG 게임 DB 튜닝 및 운영을 통해 DB와 밀접하게 관련된 SQL Developer, DBA 경험을 하였습니다. 
+게임 대용량 데이터, MAU 150만 크라우드 펀딩 플랫폼의 이벤트 로그, ETL, DW, BI 튜닝 및 운영, 추천 개발 등 Data Engineer 경험을 하였으며 이를 토대로 다양한 도메인에서 데이터 생명 주기를 경험 하였습니다.
+개인이 적용 하고 싶은 기술 보단 현재 상황을 고려 하여 문제 해결에 가장 적합한 기술을 선택합니다. 
 
-  I am most skilled in: <mark>AWS</mark> and <mark>Eating Pizza</mark>
+데이터 관련 직군 뿐만 아니라 전사 직원이 활용 할 수 있는 Self Service BI를 갖춰 회사의 비즈니스 임팩트에 데이터로 
+의견을 제시 할 수 있는 환경 구성(실시간 처리성, 접근 용이성)에 관심이 많습니다.
 
 content:
   - title: Projects # Title for the section
