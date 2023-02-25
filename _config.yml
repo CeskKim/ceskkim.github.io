@@ -69,15 +69,21 @@ content:
         #   Solving 21st century problems by diging holes and making game changing products like the *not a flamethrower*
         description: | # this will include new lines to allow paragraphs
             - Segment, Stich, Skyvia Saas 플랫폼 고도화, 신규 기능 도입, AWS 연결을 위한 인프라 관리등을 통해 인원 대비 리소스 극대화
-              사용자 이벤트, Google Sheet, Branch등을 통한 마케팅 정보, CRM, CS 데이터를 인원 대비 S3, Redshift에 적재 하는 데이터 통합 환경 구축            
+              사용자 이벤트, Google Sheet, Branch등을 통한 마케팅 정보, CRM, CS 데이터를 인원 대비 S3, Redshift에 적재 하는 데이터 통합 환경 구축
+
             - Glue(Python, Spark) 도입 및 Dpus 최적화 작업을 통해 기존 Lambda TimeOut 해결을 통해서 대용량 데이터를 시간 단위로 제공 할 수 있는 데이터 파이프라인 구축
+
             - Step functions 도입을 통해 AWS내 여러 서비스를 통합 관리하기 용이하도록 데이터 워크플로우 구축 이를 기반으로 Role Base 추천 시스템 제공, 유입경로 대시보드 제공 등
               Reverse ETL을 통해서 회사 구독제 서비스 핵심 기능 제공
+
             - Glue Crawler, Catalog를 분산 되어 있던 데이터를 통합 정보 탐색(데이터 칼럼 의미) 시간을 제거, 데이터 거버넌스 문화 구성, Redshift Data Sharing 구축을 통해
               교차 리전 프로덕트별 분석 편리성 제공등을 통해 칼럼 의미, 배치 요청등에 대한 버퍼 시간 제거를 통해 데이터 분석가 업무 효율 30%증대
+
             - 데이터 복제, ETL 이슈시 알람 슬랙 전송, Spark History Server, CloudWath 모니터링을 통해 부하 배치, 워크로두 시간 파악 ~~ 슬로우 쿼리, 배치 비율 20% 하락
+
             - Superset도입을 통해 기존 전사 대시보드 대비 비용 90% 절감, ODS, DIM, MART 테이블 모델링, 데이터 분석가와 협업을 통해서 전사 OKR, 부서별 OKR 현황 대시보드 구축을 통해
               데이터 드리븐 문화 구성
+              
             - 내부 사용자들 에게 SQL 가이드를 통해 SQL 사용 가능 하면 데이터 부서 도움 없이 데이터를 추출 할 수 있는 Self BI 환경 제공
                 
       - layout: left
