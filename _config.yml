@@ -69,7 +69,8 @@ content:
         #   Solving 21st century problems by diging holes and making game changing products like the *not a flamethrower*
         description: | # this will include new lines to allow paragraphs
             - Segment, Stich, Skyvia Saas 플랫폼 고도화, 신규 기능 도입, AWS 데이터 인프라 관리를 통해 인원 대비 리소스 극대화
-              사용자 이벤트, Google Sheet, Branch등을 통한 마케팅 정보, CRM, CS 데이터를 S3, Redshift(Datawarehouse) 에 적재 하는 데이터 통합 환경 구축
+              사용자 이벤트, Google Sheet, Branch등을 통한 마케팅 정보, CRM, CS 데이터를 S3, Redshift(Datawarehouse) 에 적재 하는 데이터 통합 환경, Columnstored Index 기반
+              MPP 플랫폼 사용으로 집계성, 대용량 데이터 조회의 최적화 된 BI 기반 환경 구성으로 신속한 업무 의사결정 일조
 
             - Glue(Python, Spark) 도입 및 Dpus 최적화 작업을 통해 기존 Lambda TimeOut 해결, S3 파티셔닝 도입을 통해서 대용량 데이터를 시간 단위로 제공 할 수 있는 데이터 파이프라인 설계, 구축
 
@@ -79,10 +80,10 @@ content:
             - Glue Crawler, Catalog를 분산 되어 있던 데이터를 통합 정보 탐색(데이터 칼럼 의미) 시간을 제거, 데이터 거버넌스 문화 구성, Redshift Data Sharing 구축을 통해
               교차 리전 프로덕트별 분석 편리성 제공등을 통해 칼럼 의미, 배치 요청등에 대한 버퍼 시간 제거를 통해 데이터 분석가 업무 효율 30%증대
 
-            - 데이터 복제, ETL 이슈시 알람 슬랙 전송, Spark History Server, CloudWath 모니터링을 통해 부하 배치, 워크로두 시간 파악 ~~ Slow 내역, 배치 비율 20% 하락
+            - 데이터 복제, ETL 이슈시 알람 슬랙 전송, Spark History Server, CloudWath 모니터링을 통해 부하 배치, 워크로드 시간 파악을 통해 SparkSQL, RedshiftSQL, Spark, Python 튜닝을 통해 병목 구간배치 비율 70% 하락
 
             - Superset도입을 통해 기존 전사 대시보드 대비 비용 90% 절감, 정형, 비정형 데이터를 대시보드 분석에 적합한 형태로 ODS, DIM, MART 데이터 모델링, 데이터 분석가와 협업을 통해서 OKR, KPI, 부서별, 전사 대시보드 구축을 통해
-              BI 환경 구성
+              BI 환경 구성으로 업무 편리성 증대, 데이터 드리븐 문화 구성
               
             - 내부 사용자들 에게 SQL 가이드를 통해 SQL 사용 가능 하면 데이터 부서 도움 없이 데이터를 추출 할 수 있는 Self BI 환경 제공
                 
@@ -96,12 +97,13 @@ content:
         #   Solving 21st century problems by diging holes and making game changing products like the *not a flamethrower*
         description: | # this will include new lines to allow paragraphs
             - Azure DataBase SQL Server를 Datawarehoused용도 (복구모델 최소화, 파일그룹(분산 처리), 메모리 최적화, Columnstored Index 설정)구성
-              을 통해 전사 BI 환경 구성, 각 부서별 엑셀로 관리 되던 내역 통합 하여 전사 공유를 통해 데이터 민주화 문화 구성
+              이를 통해 집계성, 대용량 데이터 조회의 최적화 된 BI 기반 환경 구성으로 신속한 업무 의사결정 일조
 
             - Azure Data Explorer, Kusto 구성을 통해 게임에서 발생 하는 대용량 데이터 분석, 인프라 관리(존(핫,콜드) 구분, 미 사용 데이터 다이어트)를 통한 최적의 분석 환경 제공, Azure Data Factory를 통해 데이터 워크플로우 구축
               이를 통해 100개 이상의 배치 관리 효율성 증대
 
-            - 정형, 비정형 데이터를 대시보드 분석에 적합한 형태로 ODS, DIM, MART 테이블 모델링 및 개발, Cognos르 통해 OKR, KPI, 부서별, 전사 대시보드 구축을 통해 BI 환경 구성
+            - 정형, 비정형 데이터를 대시보드 분석에 적합한 형태로 ODS, DIM, MART 테이블 모델링 및 개발, Cognos르 통해 OKR, KPI, 부서별, 전사 대시보드 구축을 통해 기존 부서별 액셀로 관리 되던 부분을 전사 BI 환경 구성으로 업무 편리성 증대, 데이터 드리븐
+              문화 구성
 
             - Azure Montior, Grafana 모니터링, 실행 계획을 통해  Slow(Query, Stored Procedure)내역, 실행 계획 바탕 으로 Table 분석, 조각 모음 진행, 통계 최신화, Index 재설정, Temp Table 최소화, 로그 관리를 통해 한국 2만, 글로벌 150만 동접, 
               총 150개 Azure Database SQL Server 평균 CPU 20%이하, 데드락 발생율 10%이하 안정적인 운영
